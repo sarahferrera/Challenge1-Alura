@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Challenge </title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/header.css">
+        <link rel="stylesheet" href="assets/mensajeInsertado.css">
+        <link rel="stylesheet" href="assets/mensajeDesifrado.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
+    </head>
+    
+    <body>
+        <header>
+            <img alt="" class="logo" src="Imagenes/Logo.svg">
+        </header>
+    
+        <main>
+            <section class="mensajeInsertado-container">
+                <textarea class=entrada-texto cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="mensajeInsertado__opciones">
+                    <div class="informacion-container">
+                        <span class="informacion__icon"> <img src="Imagenes/Vector-signo-admiracion.svg" alt=""> </span>
+                        <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                    </div>
+                    <div class="botones">
+                        <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+    
+                        <button class="boton-desencriptar" onclick="botonDesencriptar()"> Desencriptar </button>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="mensajeDesifrado-container">
+                <label for=".mensaje"></label>
+                    <textarea placeholder="No se encontraron mensajes" class="mensaje" ols="20" rows="10"></textarea>
+    
+                <div>
+                    <button onclick="copyText()" class="botonCopiar" id="copyButton">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
