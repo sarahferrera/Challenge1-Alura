@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codificador de Textos</title>
+    <title>Text Encoder</title>
     <link rel="stylesheet" href="assets/reset.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/header.css" />
@@ -30,22 +30,22 @@
           class="entrada-texto"
           cols="30"
           rows="10"
-          placeholder="Ingrese el texto aqui"
+          placeholder="Enter the text here"
         ></textarea>
         <div class="mensajeInsertado__opciones">
           <div class="informacion-container">
             <span class="informacion__icon">
               <img src="assets/Vector-signo-admiracion.sv" alt="" />
             </span>
-            <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            <h6 class="informacion">Lowercase letters only</h6>
           </div>
           <div class="botones">
             <button class="boton-encriptar" onclick="botonEncriptar()">
-              Encriptar
+              Encrypt
             </button>
 
             <button class="boton-desencriptar" onclick="botonDesencriptar()">
-              Desencriptar
+              Decrypt
             </button>
           </div>
         </div>
@@ -55,7 +55,7 @@
         <label for=".mensaje"></label>
         <textarea
           title="mensaje"
-          placeholder="No se encontraron mensajes"
+          placeholder="No messages found"
           class="mensaje"
           ols="20"
           rows="10"
@@ -63,7 +63,7 @@
 
         <div>
           <button onclick="copyText()" class="botonCopiar" id="copyButton">
-            Copiar
+            Copy
           </button>
         </div>
       </section>
