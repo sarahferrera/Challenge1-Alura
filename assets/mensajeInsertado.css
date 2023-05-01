@@ -1,142 +1,134 @@
-.entrada-texto{
-    border: none;
-    color: #0A3871;
-    margin-top: 5.55%;
-    text-transform: lowercase;
-   
+.entrada-texto {
+  border: none;
+  color: #0a3871;
+  margin-top: 5.55%;
+  text-transform: lowercase;
 }
 
-::placeholder{ color: #0A3871;}
-    .entrada-texto:focus {
-        outline: none;
-    }
-
+::placeholder {
+  color: #0a3871;
+}
+.entrada-texto:focus {
+  outline: none;
+}
 
 .entrada-texto:focus {
-    outline: none;
-    }
+  outline: none;
+}
 
 .mensajeInsertado__opciones {
-    margin-top: 18%;
+  margin-top: 18%;
 }
 
 .informacion-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.informacion{
-    color: #495057;
-    font-size: 18px;
-    margin-bottom: 0.1rem;
-    margin-left: 0.8%;
+.informacion {
+  color: #495057;
+  font-size: 18px;
+  margin-bottom: 0.1rem;
+  margin-left: 0.8%;
 }
 
 .informacion-container span {
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.boton-encriptar{
-    background: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: white;   
-    cursor: pointer;
-    height: 67px;
-    width: 328px;
-    font-size: 16px;
-
+.boton-encriptar {
+  background: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  font-size: 16px;
 }
 
-.boton-desencriptar{
-    background: #d8dfe8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color: #0A3871;   
-    cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;
-    font-size: 16px;
-
+.boton-desencriptar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+  font-size: 16px;
 }
 
 /* Estilos para Tablets */
 
 @media only screen and (max-width: 768px) {
-    .mensajeInsertado-container {
-        width: 100%;
+  .mensajeInsertado-container {
+    width: 100%;
+  }
 
-    }
+  .entrada-texto {
+    margin-top: 70px;
+    /* width: 100%; */
+  }
 
-    .entrada-texto {
-        margin-top: 70px;
-        /* width: 100%; */
-    }
+  .informacion-container {
+    align-items: center;
+  }
 
-    .informacion-container {
-        align-items: center;
-    }
+  .informacion__icon img {
+    width: 80%;
+  }
 
-    .informacion__icon img {
-        width: 80%;
-    }
+  .informacion {
+    font-size: 12px;
+  }
 
-    .informacion {
-        font-size: 12px;
-    }
-    
-    .boton-encriptar {
-        width: 46%;
-    }
+  .boton-encriptar {
+    width: 46%;
+  }
 
-    .boton-desencriptar {
-        width: 46%;
-        background-color: #F3F5FC;
-
-    }
-
+  .boton-desencriptar {
+    width: 46%;
+    background-color: #f3f5fc;
+  }
 }
 
 /* Estilos para celulares */
 
 @media only screen and (max-width: 480px) {
-    .entrada-texto {
-        width: 348px;
-    }
+  .entrada-texto {
+    width: 348px;
+  }
 
-    .mensajeInsertado__opciones {
-        margin: 0;
-    }
+  .mensajeInsertado__opciones {
+    margin: 0;
+  }
 
-    .informacion {
-        margin: 0;
-    }
-    
-    .boton-encriptar{
-        width: 100%;
+  .informacion {
+    margin: 0;
+  }
 
-    }
+  .boton-encriptar {
+    width: 100%;
+  }
 
-    .boton-desencriptar {
-        margin: 0;
-        margin-top: 20px;
-        width: 100%;
-    }
+  .boton-desencriptar {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
 
-    .mensajeDesifrado-container {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+  .mensajeDesifrado-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 
-    .mensaje {
-        font-size: 24px;
-        width: 328px;
-        height: auto;
-        background-image: none;
-    }
-
-    
+  .mensaje {
+    font-size: 24px;
+    width: 328px;
+    height: auto;
+    background-image: none;
+  }
 }
